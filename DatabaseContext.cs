@@ -30,7 +30,7 @@ namespace joins
       {
         var envConn = Environment.GetEnvironmentVariable("DATABASE_URL");
 #warning Be sure to update to your correct connection string to the point to the correct database
-        var conn = "server=localhost;database=employeedb;User Id=postgres;Password=Krew2015";
+        var conn = "server=localhost;database=employeedb;UserId=postgres;password=Krew2015";
         if (envConn != null)
         {
           conn = ConvertPostConnectionToConnectionString(envConn);
@@ -44,7 +44,7 @@ namespace joins
     {
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
-    public DbSet<employees> Employee { get; set; }
+    public DbSet<Employee> Employee { get; set; }
     public DbSet<Department> Departments { get; set; }
 
   }

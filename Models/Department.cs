@@ -7,7 +7,7 @@ namespace joins.Models
   {
     public int Id { get; set; }
     public string Department_Name { get; set; }
-    public List<employees> Employee { get; set; }
+    public List<Employee> Employee { get; set; }
 
 
 

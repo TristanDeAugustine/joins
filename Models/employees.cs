@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace joins.Models
 {
-  public class employees
+  public class Employee
   {
     public int Id { get; set; }
     public string Full_Name { get; set; }
